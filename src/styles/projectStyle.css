@@ -1,0 +1,12 @@
+.myProject {
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+.myProject:hover{
+    box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.3);
+}
