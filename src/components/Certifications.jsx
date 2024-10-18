@@ -7,6 +7,7 @@ function openImage()
 
 
 function CertificatePlaceHolder(props) {
+  var filePath = "/images/Certifications/" + props.fileName;
     return <div> 
       
       <div class="col">
@@ -14,7 +15,7 @@ function CertificatePlaceHolder(props) {
         
         <div class="card-body">
           <h4 class="card-text">{props.text}</h4>   
-              <button type="button" className="btn btn-sm btn-outline-secondary text-center">View</button>  
+          <a href={filePath} target="_blank" class="btn btn-dark">View</a>  
           </div>
         </div>
 
@@ -28,13 +29,13 @@ function Certificate()
     <h1 className="text-center pb-2"> Certifications</h1>
 
     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-    <CertificatePlaceHolder text = "AWS Cloud foundation"/>
-    <CertificatePlaceHolder text = "AWS Academy Cloud Architecting"/>
-    <CertificatePlaceHolder text = "Wipro Java"/>
-    <CertificatePlaceHolder text = "Programming Essentials C++"/>
-    <CertificatePlaceHolder text = "Programming Essentials C"/>
-    <CertificatePlaceHolder text = "Cybersecurity Introduction"/>
-    <CertificatePlaceHolder text = "Cybersecurity Essential"/>
+    <CertificatePlaceHolder text = "AWS Cloud foundation" fileName = "AWS_ Foundation.pdf"/>
+    <CertificatePlaceHolder text = "AWS Academy Cloud Architecting" fileName = "AWS_Architect.pdf"/>
+    <CertificatePlaceHolder text = "Wipro Java" fileName = "Wipro TalentNext.pdf"/>
+    <CertificatePlaceHolder text = "Programming Essentials C++" fileName = "Programming EssentialsC++.pdf"/>
+    <CertificatePlaceHolder text = "Programming Essentials C" fileName = "Programming EssentialsC++.pdf"/>
+    <CertificatePlaceHolder text = "Cybersecurity Introduction" fileName = "CyberSecurityIntroduction.pdf"/>
+    <CertificatePlaceHolder text = "Cybersecurity Essential" fileName = "CybersecurityEsential.pdf"/>
 
 
     </div>

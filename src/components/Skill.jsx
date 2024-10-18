@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./card";
 
 const element = (
-    <div className="bg-body-tertiary " id="skills">
+    <div className="bg-body-tertiary  " id="skills">
          <h1 className="text-center  mb-0">Skills</h1>
     <div class="row g-4 py-1 row-cols-1 row-cols-lg-3 ">
         

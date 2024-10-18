@@ -16,7 +16,7 @@ Wanna Know about me? Check out all the things i did</p>
       <p class="lead mb-4">And hey, speaking of cool things, did you know this page has been viewed 994 times? Fun fact!</p>
       </div>
      <div class="container text-center ">
-    <a href="/images/Rishabh Verma Resume.pdf" target="_blank" class="btn btn-dark">My Resume</a> 
+    <a href="/images/Rishabh Verma Resume.pdf" target="_blank" class="btn btn-dark ">My Resume</a> 
 </div>
      
     </div>
