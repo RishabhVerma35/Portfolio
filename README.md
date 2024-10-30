@@ -52,4 +52,5 @@ The visitor count system is built with AWS services:
 
 3. **DynamoDB Table**:
    - Create a DynamoDB table with a primary key for storing visitor counts.
+   - Create a item in table with "id" and "views" item in it.
 
