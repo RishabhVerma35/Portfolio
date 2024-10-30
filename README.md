@@ -20,7 +20,7 @@ The frontend is built using React, and the following commands can be used to set
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/your-repo.git
+git clone https://github.com/RishabhVerma35/Portfolio.git
 
 # Navigate to the project directory
 cd your-repo
