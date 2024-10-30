@@ -1,5 +1,7 @@
 # React Website with Visitor Count using AWS S3, API Gateway, and DynamoDB
 
+![Architect](https://github.com/user-attachments/assets/fcc1407f-1207-49c0-81ae-663ee752f829)
+
 ## Overview
 
 This project is a **React** website I built and hosted on **AWS S3**. It includes a **visitor count system** that I implemented using **AWS API Gateway**, **Lambda**, and **DynamoDB**. The website counts and displays the number of visitors in real-time.
