@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
 function VisitCount() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(30);
   const ApiUrl = "https://rzg5amkfsj.execute-api.ap-south-1.amazonaws.com/prod";
+  
   useEffect(() => {
 
     fetch(ApiUrl)
@@ -14,13 +15,24 @@ function VisitCount() {
       })
       .then(data => {
         console.log('API response:', data);
-        setCount(data);
+        let current = 0;
+        const Inteval = setInterval(()=>{
+          if(current<data)
+           {
+             current++;
+             setCount(current);
+           }else
+           {
+             clearInterval(Inteval)
+           }
+       },10)
+    
       })
       .catch(error => {
         console.error('Error:', error);
       });
   }, []);
-
+  
   return (
     <span className='fw-bold'>{count}</span>
   )
@@ -37,8 +49,8 @@ const element = (
 
 
         <p class="lead mb-4 ">Hi! There, I am a Full Stack Developer who loves building cool stuff.<br />
-          When I'm not coding You find me lifting weights :)
-          Wanna Know about me? Check out all the things i did</p>
+         
+         </p>
         <div class="d-flex gap-3 justify-content-center lead fw-normal">
 
           <p class="lead mb-4">And hey, speaking of cool things, did you know this page has been viewed <VisitCount /> times? Fun fact!</p>
